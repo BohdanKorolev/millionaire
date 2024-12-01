@@ -1,0 +1,66 @@
+:root {
+  /* main colors */
+  --orange-120: #E87928;
+
+  --orange-100: #FF8B37;
+  --green-100: #47D867;
+  --red-100: #EC6259;
+  --black-100: #1C1C21;
+  --white-100: #FFFFFF;
+
+  --orange-80: #FFAC70;
+
+  --black-40: #D0D0D8;
+
+  --orange-5: #FFF3EB;
+  --green-5: #E6FAEA;
+  --red-5: #FDEEED;
+  --black-5: #F5F5F7;
+
+
+  /* main button colors */
+  --main-button-text: var(--white-100);
+  --main-button-bg: var(--orange-100);
+  --main-button-bg-hover: var(--orange-80);
+  --main-button-bg-pressed: var(--orange-120);
+
+
+  /* question button colors */
+  --question-button-indicator: var(--orange-100);
+  --question-button-text: var(--black-100);
+
+  --question-button-bg: var(--white-100);
+  --question-button-bg-selected: var(--orange-5);
+  --question-button-bg-correct: var(--green-5);
+  --question-button-bg-wrong: var(--red-5);
+
+  --question-button-border: var(--black-40);
+  --question-button-border-hover: var(--orange-100);
+  --question-button-border-selected: var(--orange-100);
+  --question-button-border-correct: var(--green-100);
+  --question-button-border-wrong: var(--red-100);
+
+
+  /* question step colors */
+  --question-step-text: var(--black-100);
+  --question-step-text-active: var(--orange-100);
+  --question-step-text-disabled: var(--black-40);
+
+  --question-step-border: var(--black-40);
+  --question-step-border-active: var(--orange-100);
+
+
+  /* font sizes */
+  --heading-font-size: 3.5rem;
+  --question-font-size: 2rem;
+  --utils-font-size: 1.25rem;
+
+  @media screen and (max-width: 540px) {
+    --heading-font-size: 2rem;
+    --question-font-size: 1.125rem;
+    --utils-font-size: 0.875rem;
+  }
+
+  /* gaps */
+  --base-gap: 1rem;
+}

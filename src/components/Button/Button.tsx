@@ -1,12 +1,15 @@
-import React from 'react';
+import { JSX } from 'react';
+import styles from './Button.module.scss';
 
-interface IButtonProps {
-  label: string;
+export interface IButtonProps {
+  text: string;
   onClick: () => void;
 }
 
-const Button: React.FC<IButtonProps> = ({ label, onClick }) => {
-  return <button onClick={onClick}>{label}</button>;
-};
-
-export default Button;
+export default function Button(props: IButtonProps): JSX.Element {
+  return (
+    <button type="button" onClick={props.onClick} className={styles.button}>
+      {props.text}
+    </button>
+  );
+}

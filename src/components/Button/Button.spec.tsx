@@ -5,7 +5,7 @@ it('fires the onClick event when clicked', () => {
   const handleClick = jest.fn();
   const label = 'Click me';
 
-  render(<Button label={label} onClick={handleClick} />);
+  render(<Button text={label} onClick={handleClick} />);
 
   const button = screen.getByText(label);
   fireEvent.click(button);

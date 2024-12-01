@@ -1,0 +1,278 @@
+[
+  {
+    "id": 1,
+    "question": "Which is the largest planet in the Solar System?",
+    "answers": [
+      {
+        "text": "Earth",
+        "isCorrect": false
+      },
+      {
+        "text": "Mars",
+        "isCorrect": false
+      },
+      {
+        "text": "Venus",
+        "isCorrect": false
+      },
+      {
+        "text": "Jupiter",
+        "isCorrect": true
+      }
+    ],
+    "reward": "$500"
+  },
+  {
+    "id": 2,
+    "question": "What is the capital of France?",
+    "answers": [
+      {
+        "text": "Paris",
+        "isCorrect": true
+      },
+      {
+        "text": "Berlin",
+        "isCorrect": false
+      },
+      {
+        "text": "Madrid",
+        "isCorrect": false
+      },
+      {
+        "text": "Rome",
+        "isCorrect": false
+      }
+    ],
+    "reward": "$1,000"
+  },
+  {
+    "id": 3,
+    "question": "There were two goats. How many?",
+    "answers": [
+      {
+        "text": "One",
+        "isCorrect": true
+      },
+      {
+        "text": "Two",
+        "isCorrect": true
+      },
+      {
+        "text": "Five",
+        "isCorrect": false
+      },
+      {
+        "text": "Four",
+        "isCorrect": false
+      }
+    ],
+    "reward": "$2,000"
+  },
+  {
+    "id": 4,
+    "question": "What is the largest ocean on Earth?",
+    "answers": [
+      {
+        "text": "Atlantic Ocean",
+        "isCorrect": false
+      },
+      {
+        "text": "Indian Ocean",
+        "isCorrect": false
+      },
+      {
+        "text": "Arctic Ocean",
+        "isCorrect": false
+      },
+      {
+        "text": "Pacific Ocean",
+        "isCorrect": true
+      }
+    ],
+    "reward": "$4,000"
+  },
+  {
+    "id": 5,
+    "question": "Who wrote 'Romeo and Juliet'?",
+    "answers": [
+      {
+        "text": "Charles Dickens",
+        "isCorrect": false
+      },
+      {
+        "text": "Jane Austen",
+        "isCorrect": false
+      },
+      {
+        "text": "Mark Twain",
+        "isCorrect": false
+      },
+      {
+        "text": "William Shakespeare",
+        "isCorrect": true
+      }
+    ],
+    "reward": "$8,000"
+  },
+  {
+    "id": 6,
+    "question": "What is the smallest country in the world?",
+    "answers": [
+      {
+        "text": "Monaco",
+        "isCorrect": false
+      },
+      {
+        "text": "Vatican City",
+        "isCorrect": true
+      },
+      {
+        "text": "San Marino",
+        "isCorrect": false
+      },
+      {
+        "text": "Liechtenstein",
+        "isCorrect": false
+      }
+    ],
+    "reward": "$16,000"
+  },
+  {
+    "id": 7,
+    "question": "There are 2 sheep. One of them is a sheep. Who is the other?",
+    "answers": [
+      {
+        "text": "Bull",
+        "isCorrect": false
+      },
+      {
+        "text": "Who",
+        "isCorrect": false
+      },
+      {
+        "text": "Who, Who?",
+        "isCorrect": true
+      },
+      {
+        "text": "Moose",
+        "isCorrect": false
+      }
+    ],
+    "reward": "$32,000"
+  },
+  {
+    "id": 8,
+    "question": "Who painted the Mona Lisa?",
+    "answers": [
+      {
+        "text": "Claude Monet",
+        "isCorrect": false
+      },
+      {
+        "text": "Vincent van Gogh",
+        "isCorrect": false
+      },
+      {
+        "text": "Pablo Picasso",
+        "isCorrect": false
+      },
+      {
+        "text": "Leonardo da Vinci",
+        "isCorrect": true
+      }
+    ],
+    "reward": "$64,000"
+  },
+  {
+    "id": 9,
+    "question": "What is the longest river in the world?",
+    "answers": [
+      {
+        "text": "Nile River",
+        "isCorrect": false
+      },
+      {
+        "text": "Amazon River",
+        "isCorrect": true
+      },
+      {
+        "text": "Yangtze River",
+        "isCorrect": false
+      },
+      {
+        "text": "Mississippi River",
+        "isCorrect": false
+      }
+    ],
+    "reward": "$125,000"
+  },
+  {
+    "id": 10,
+    "question": "What is the chemical symbol for gold?",
+    "answers": [
+      {
+        "text": "Ag",
+        "isCorrect": false
+      },
+      {
+        "text": "Pb",
+        "isCorrect": false
+      },
+      {
+        "text": "Fe",
+        "isCorrect": false
+      },
+      {
+        "text": "Au",
+        "isCorrect": true
+      }
+    ],
+    "reward": "$250,000"
+  },
+  {
+    "id": 11,
+    "question": "What is the capital of Japan?",
+    "answers": [
+      {
+        "text": "Tokyo",
+        "isCorrect": true
+      },
+      {
+        "text": "Seoul",
+        "isCorrect": false
+      },
+      {
+        "text": "Beijing",
+        "isCorrect": false
+      },
+      {
+        "text": "Kyoto",
+        "isCorrect": false
+      }
+    ],
+    "reward": "$500,000"
+  },
+  {
+    "id": 12,
+    "question": "Which animal is known as the King of the Jungle?",
+    "answers": [
+      {
+        "text": "Tiger",
+        "isCorrect": false
+      },
+      {
+        "text": "Elephant",
+        "isCorrect": false
+      },
+      {
+        "text": "Giraffe",
+        "isCorrect": false
+      },
+      {
+        "text": "Lion",
+        "isCorrect": true
+      }
+    ],
+    "reward": "$1,000,000"
+  }
+]

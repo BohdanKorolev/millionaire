@@ -1,0 +1,21 @@
+.button {
+  color: var(--main-button-text);
+  font-size: var(--utils-font-size);
+  line-height: 116%;
+  font-weight: 600;
+  background-color: var(--main-button-bg);
+  border: none;
+  border-radius: 0.75rem;
+  padding: 1.3125rem 1.5rem;
+  min-width: 18.5rem;
+  transition-duration: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--main-button-bg-hover);
+  }
+
+  &:active {
+    background-color: var(--main-button-bg-pressed);
+  }
+}
