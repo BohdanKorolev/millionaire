@@ -10,5 +10,5 @@ it('fires the onClick event when clicked', () => {
   const button = screen.getByText(label);
   fireEvent.click(button);
 
-  expect(handleClick).toHaveBeenCalledTimes(2);
+  expect(handleClick).toHaveBeenCalledTimes(1);
 });
