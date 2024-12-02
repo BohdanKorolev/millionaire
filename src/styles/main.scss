@@ -1,0 +1,11 @@
+@import '@/styles/reset';
+@import '@/styles/variables';
+@import '@/styles/grid.scss';
+
+html, body, main {
+  height: 100%;
+}
+
+html {
+  font-size: var(--base-font-size);
+}

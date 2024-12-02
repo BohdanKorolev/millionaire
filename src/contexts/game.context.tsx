@@ -11,7 +11,6 @@ import {
 
 type GameContextType = {
   score: string;
-  // eslint-disable-next-line no-unused-vars
   setScore: (score: string) => void;
 };
 

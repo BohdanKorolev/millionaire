@@ -7,8 +7,12 @@ export interface IButtonProps {
 }
 
 export default function Button(props: IButtonProps): JSX.Element {
+  function onClick(): void {
+    props.onClick();
+  }
+
   return (
-    <button type="button" onClick={props.onClick} className={styles.button}>
+    <button type="button" onClick={onClick} className={styles.button}>
       {props.text}
     </button>
   );

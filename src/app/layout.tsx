@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
-import '../common/styles/main.scss';
+import '../styles/main.scss';
 import { JSX } from 'react';
-import { GameProvider } from '@/common/context/GameContext';
 import { Inter } from 'next/font/google';
 
 export const metadata: Metadata = {
@@ -22,9 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main className={inter.className}>
-          <GameProvider>{children}</GameProvider>
-        </main>
+        <main className={inter.className}>{children}</main>
       </body>
     </html>
   );
