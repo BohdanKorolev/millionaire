@@ -33,7 +33,7 @@
     ],
     "paths": {
       "@/*": [
-        "./src/*"
+        "src/*"
       ],
       "@components/*": [
         "components/*"

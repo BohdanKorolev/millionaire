@@ -19,6 +19,7 @@ export default function QuestionButton(props: IQuestionBtnProps): JSX.Element {
         viewBox="0 0 405 72"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        role="img"
       >
         <path className={styles.svg__hands} d="M388 36L405 36" />
         <path className={styles.svg__hands} d="M0 36L17 36" />

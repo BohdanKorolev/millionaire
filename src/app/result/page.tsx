@@ -13,7 +13,7 @@ export default function ResultPage(): JSX.Element {
 
   useEffect(() => {
     if (!score) {
-      // router.replace('/');
+      router.replace('/');
     }
   }, [score, router]);
 
