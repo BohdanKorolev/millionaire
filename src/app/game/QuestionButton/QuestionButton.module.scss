@@ -1,0 +1,119 @@
+.button {
+  position: relative;
+  max-width: 421px;
+  max-height: 72px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: left;
+  height: fit-content;
+  padding: 0;
+
+  //@media screen and (max-width: 1280px) {
+  //  max-width: 330px;
+  //  max-height: 60px;
+  //  padding: 1.2rem 2.5rem;
+  //}
+  //
+  //@media screen and (max-width: 576px) {
+  //
+  //}
+
+  &__svg {
+    width: 100%;
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 11.85%;
+    transform: translate(0, -50%);
+
+    font-weight: 400;
+    font-size: var(--utils-font-size);
+    line-height: 116%;
+    white-space: nowrap;
+
+    &__indicator {
+      margin-right: 0.5rem;
+      color: var(--orange-100);
+    }
+  }
+
+  .svg {
+    &__body {
+      transition: fill 0.3s ease, stroke 0.3s ease;
+      stroke: var(--question-button-border);
+      fill: var(--question-button-bg);
+    }
+
+    &__hands {
+      transition: stroke 0.3s ease;
+      stroke: var(--question-button-border);
+    }
+  }
+
+  &:hover {
+    .svg {
+      &__body {
+        stroke: var(--question-button-border-hover);
+      }
+
+      &__hands {
+        stroke: var(--question-button-border-hover);
+      }
+    }
+  }
+
+  &:active {
+    .svg {
+      &__body {
+        fill: var(--question-button-bg-selected);
+        stroke: var(--question-button-border-selected);
+      }
+
+      &__hands {
+        stroke: var(--question-button-border-selected);
+      }
+    }
+  }
+
+  &_active {
+    .svg {
+      &__body {
+        fill: var(--question-button-bg-selected);
+        stroke: var(--question-button-border-selected);
+      }
+
+      &__hands {
+        stroke: var(--question-button-border-selected);
+      }
+    }
+  }
+
+  &_correct {
+    .svg {
+      &__body {
+        fill: var(--question-button-bg-correct);
+        stroke: var(--question-button-border-correct);
+      }
+
+      &__hands {
+        stroke: var(--question-button-border-correct);
+      }
+    }
+  }
+
+  &_wrong {
+    .svg {
+      &__body {
+        fill: var(--question-button-bg-wrong);
+        stroke: var(--question-button-border-wrong);
+      }
+
+      &__hands {
+        stroke: var(--question-button-border-wrong);
+      }
+    }
+  }
+}

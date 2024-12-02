@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import '../styles/main.scss';
 import { JSX } from 'react';
 import { Inter } from 'next/font/google';
+import { GameProvider } from '@/contexts/game.context';
 
 export const metadata: Metadata = {
   title: 'Who wants to be a millionaire?',
@@ -21,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main className={inter.className}>{children}</main>
+        <main className={inter.className}>
+          <GameProvider>{children}</GameProvider>
+        </main>
       </body>
     </html>
   );

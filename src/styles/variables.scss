@@ -55,12 +55,9 @@
   --question-font-size: 2rem;
   --utils-font-size: 1.25rem;
 
-  @media screen and (max-width: 540px) {
-    --heading-font-size: 2rem;
-    --question-font-size: 1.125rem;
-    --utils-font-size: 0.875rem;
-  }
-
-  /* gaps */
-  --base-gap: 1rem;
+  //@media screen and (max-width: 540px) {
+  //  --heading-font-size: 2rem;
+  //  --question-font-size: 1.125rem;
+  //  --utils-font-size: 0.875rem;
+  //}
 }
