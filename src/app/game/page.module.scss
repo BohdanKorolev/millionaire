@@ -7,7 +7,7 @@
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 367px;
-  background-color: var(--black-5);
+  background-color: $black-5;
 
   @media screen and (max-width: map-get($breakpoints, lg)) {
     grid-template-columns: 1fr;
@@ -86,7 +86,7 @@
 
   &__rewards {
     height: inherit;
-    background-color: var(--white-100);
+    background-color: $white-100;
     overflow: hidden;
     display: flex;
     justify-content: center;

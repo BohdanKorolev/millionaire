@@ -1,4 +1,6 @@
 @import '@/styles/typography';
+@import '@/styles/variables';
+@import '@/styles/grid';
 
 .button {
   position: relative;
@@ -10,16 +12,6 @@
   text-align: left;
   height: fit-content;
   padding: 0;
-
-  //@media screen and (max-width: 1280px) {
-  //  max-width: 330px;
-  //  max-height: 60px;
-  //  padding: 1.2rem 2.5rem;
-  //}
-  //
-  //@media screen and (max-width: 576px) {
-  //
-  //}
 
   &__svg {
     width: 100%;
@@ -36,31 +28,31 @@
 
     &__indicator {
       margin-right: 0.5rem;
-      color: var(--orange-100);
+      color: $orange-100;
     }
   }
 
   .svg {
     &__body {
       transition: fill 0.3s ease, stroke 0.3s ease;
-      stroke: var(--question-button-border);
-      fill: var(--question-button-bg);
+      stroke: $question-button-border;
+      fill: $question-button-bg;
     }
 
     &__hands {
       transition: stroke 0.3s ease;
-      stroke: var(--question-button-border);
+      stroke: $question-button-border;
     }
   }
 
   &:hover {
     .svg {
       &__body {
-        stroke: var(--question-button-border-hover);
+        stroke: $question-button-border-hover;
       }
 
       &__hands {
-        stroke: var(--question-button-border-hover);
+        stroke: $question-button-border-hover;
       }
     }
   }
@@ -68,12 +60,12 @@
   &:active {
     .svg {
       &__body {
-        fill: var(--question-button-bg-selected);
-        stroke: var(--question-button-border-selected);
+        fill: $question-button-bg-selected;
+        stroke: $question-button-border-selected;
       }
 
       &__hands {
-        stroke: var(--question-button-border-selected);
+        stroke: $question-button-border-selected;
       }
     }
   }
@@ -81,12 +73,12 @@
   &_active {
     .svg {
       &__body {
-        fill: var(--question-button-bg-selected);
-        stroke: var(--question-button-border-selected);
+        fill: $question-button-bg-selected;
+        stroke: $question-button-border-selected;
       }
 
       &__hands {
-        stroke: var(--question-button-border-selected);
+        stroke: $question-button-border-selected;
       }
     }
   }
@@ -94,12 +86,12 @@
   &_correct {
     .svg {
       &__body {
-        fill: var(--question-button-bg-correct);
-        stroke: var(--question-button-border-correct);
+        fill: $question-button-bg-correct;
+        stroke: $question-button-border-correct;
       }
 
       &__hands {
-        stroke: var(--question-button-border-correct);
+        stroke: $question-button-border-correct;
       }
     }
   }
@@ -107,12 +99,12 @@
   &_wrong {
     .svg {
       &__body {
-        fill: var(--question-button-bg-wrong);
-        stroke: var(--question-button-border-wrong);
+        fill: $question-button-bg-wrong;
+        stroke: $question-button-border-wrong;
       }
 
       &__hands {
-        stroke: var(--question-button-border-wrong);
+        stroke: $question-button-border-wrong;
       }
     }
   }

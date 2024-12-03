@@ -1,13 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
     "typeRoots": [
-      "../node_modules/@types",
-      "./node_modules/@types",
-      "../node_modules/@testing-library"
     ],
     "types": [
-      "jest",
-      "jest-dom"
     ],
     "target": "ES2017",
     "lib": [
@@ -33,10 +29,10 @@
     ],
     "paths": {
       "@/*": [
-        "src/*"
+        "./src/*"
       ],
       "@components/*": [
-        "components/*"
+        "./components/*"
       ]
     }
   },

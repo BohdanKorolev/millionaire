@@ -1,15 +1,16 @@
 @import '@/styles/typography';
 @import '@/styles/grid';
+@import '@/styles/variables';
 
 .home {
   height: inherit;
   box-sizing: border-box;
   background: linear-gradient(
                   to bottom right,
-                  var(--white-100) 0%,
-                  var(--white-100) 50%,
-                  var(--orange-5) 50%,
-                  var(--orange-5) 100%
+                  $white-100 0%,
+                  $white-100 50%,
+                  $orange-5 50%,
+                  $orange-5 100%
   );
 
   &__contatiner {

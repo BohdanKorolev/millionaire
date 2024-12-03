@@ -1,11 +1,12 @@
 @import '@/styles/typography';
 @import '@/styles/grid';
+@import '@/styles/variables';
 
 .button {
   @include responsive-font-sizes('font-size', utils);
-  color: var(--main-button-text);
+  color: $main-button-text;
   font-weight: 600;
-  background-color: var(--main-button-bg);
+  background-color: $main-button-bg;
   border: none;
   border-radius: 0.75rem;
   padding: 1.3125rem 1.5rem;
@@ -19,10 +20,10 @@
   }
 
   &:hover {
-    background-color: var(--main-button-bg-hover);
+    background-color: $main-button-bg-hover;
   }
 
   &:active {
-    background-color: var(--main-button-bg-pressed);
+    background-color: $main-button-bg-pressed;
   }
 }

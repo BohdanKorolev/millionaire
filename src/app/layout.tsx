@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import '../styles/main.scss';
+import '@/styles/main.scss';
 import { JSX } from 'react';
 import { Inter } from 'next/font/google';
 import { GameProvider } from '@/contexts/game.context';

@@ -1,5 +1,6 @@
 @import '@/styles/typography';
 @import '@/styles/grid';
+@import "@/styles/variables";
 
 .step {
   position: relative;
@@ -29,47 +30,47 @@
 
   .svg {
     &__body {
-      stroke: var(--question-step-border);
-      fill: var(--white-100);
+      stroke: $question-step-border;
+      fill: $white-100;
     }
 
     &__hands {
-      stroke: var(--question-step-border);
+      stroke: $question-step-border;
     }
   }
 
   &_active {
     .step__text {
-      color: var(--question-step-text-active);
+      color: $question-step-text-active;
     }
 
     .svg__body {
-      stroke: var(--question-step-border-active);
+      stroke: $question-step-border-active;
     }
 
     .svg__hands {
-      stroke: var(--question-step-border-active);
+      stroke: $question-step-border-active;
     }
   }
 
   &_normal {
     .step__text {
-      color: var(--question-step-text);
+      color: $question-step-text;
     }
 
     .svg__body {
-      stroke: var(--question-step-border);
-      fill: var(--white-100);
+      stroke: $question-step-border;
+      fill: $white-100;
     }
 
     .svg__hands {
-      stroke: var(--question-step-border);
+      stroke: $question-step-border;
     }
   }
 
   &_disabled {
     .step__text {
-      color: var(--question-step-text-disabled);
+      color: $question-step-text-disabled;
     }
   }
 }
