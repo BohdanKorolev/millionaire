@@ -24,12 +24,21 @@ import QuestionButton from '@/app/game/QuestionButton/QuestionButton';
 import RewardsList from '@/app/game/RewardsList/RewardsList';
 
 export default function GamePage(): JSX.Element {
+  // const [questions, setQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [isRewardsVisible, setIsRewardsVisible] = useState(false);
   const { setScore } = useGame();
   const router = useRouter();
 
   const currentQuestion = questions[currentQuestionIndex];
+
+  // useEffect(() => {
+  //   const fetchQuestions = async () => {
+  //     const { data } = await client.query({ query: GET_QUESTIONS });
+  //     setQuestions(data.questions);
+  //   };
+  //   fetchQuestions();
+  // }, []);
 
   const handleAnswer = (isCorrect: boolean, reward: string): void => {
     if (isCorrect) {
