@@ -1,0 +1,113 @@
+@import '@/styles/typography';
+@import '@/styles/variables';
+
+.game {
+  height: inherit;
+  position: relative;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 367px;
+  background-color: var(--black-5);
+
+  @media screen and (max-width: map-get($breakpoints, lg)) {
+    grid-template-columns: 1fr;
+  }
+
+  &__content {
+    height: 100%;
+    max-width: 885px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-top: 8.3125rem;
+    padding-bottom: 7.625rem;
+
+    @media screen and (max-width: map-get($breakpoints, lg)) {
+      grid-template-columns: 1fr;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, md)) {
+      padding-top: 5rem;
+      padding-bottom: 4rem;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, sm)) {
+      align-items: center;
+      padding-top: 1rem;
+      padding-bottom: 1.5rem;
+    }
+
+    &__text {
+      @include responsive-font-sizes('font-size', question);
+      font-weight: 600;
+
+      @media screen and (max-width: map-get($breakpoints, sm)) {
+        margin: auto;
+      }
+    }
+
+    &__btns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 1rem;
+
+      & > * {
+        flex: 0 1 50%;
+      }
+
+      @media screen and (max-width: map-get($breakpoints, sm)) {
+        width: 100%;
+
+        & > * {
+          flex: 1 1 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__menu {
+    z-index: 4;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: unset;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  &__rewards {
+    height: inherit;
+    background-color: var(--white-100);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: map-get($breakpoints, lg)) {
+      position: absolute;
+      display: none;
+      right: 0;
+      top: 0;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, md)) {
+      min-width: 50%;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, sm)) {
+      min-width: 100%;
+    }
+
+    &_show {
+      display: flex;
+    }
+  }
+}

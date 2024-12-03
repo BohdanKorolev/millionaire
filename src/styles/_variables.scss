@@ -51,13 +51,14 @@
 
 
   /* font sizes */
+  --base-font-size: 16px;
   --heading-font-size: 3.5rem;
   --question-font-size: 2rem;
   --utils-font-size: 1.25rem;
 
-  //@media screen and (max-width: 540px) {
-  //  --heading-font-size: 2rem;
-  //  --question-font-size: 1.125rem;
-  //  --utils-font-size: 0.875rem;
-  //}
+  @media screen and (max-width: 576px) {
+    --heading-font-size: 2rem;
+    --question-font-size: 1.125rem;
+    --utils-font-size: 0.875rem;
+  }
 }

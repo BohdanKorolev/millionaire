@@ -1,3 +1,6 @@
+@import '@/styles/typography';
+@import '@/styles/grid';
+
 .step {
   position: relative;
   max-width: 376px;
@@ -5,10 +8,10 @@
   text-align: center;
   box-sizing: border-box;
 
-  //@media screen and (max-width: 576px) {
-  //  max-width: 100%;
-  //  max-height: unset;
-  //}
+  @media screen and (max-width: map-get($breakpoints, sm)) {
+      max-width: unset;
+      max-height: unset;
+  }
 
   &__svg {
     width: 100%;
@@ -20,9 +23,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    @include responsive-font-sizes('font-size', utils);
     font-weight: 400;
-    font-size: var(--utils-font-size);
-    line-height: 116%;
   }
 
   .svg {

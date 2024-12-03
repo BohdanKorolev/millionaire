@@ -1,16 +1,8 @@
 @import '@/styles/typography';
-@import '@/styles/grid';
 
-.home {
+.result {
   height: inherit;
   box-sizing: border-box;
-  background: linear-gradient(
-                  to bottom right,
-                  var(--white-100) 0%,
-                  var(--white-100) 50%,
-                  var(--orange-5) 50%,
-                  var(--orange-5) 100%
-  );
 
   &__contatiner {
     height: inherit;
@@ -75,5 +67,12 @@
   &__title {
     @include responsive-font-sizes('font-size', heading);
     font-weight: 600;
+  }
+
+  &__subtitle {
+    @include responsive-font-sizes('font-size', question);
+    font-weight: 600;
+    color: var(--black-50);
+    opacity: 50%;
   }
 }

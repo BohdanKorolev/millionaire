@@ -25,7 +25,7 @@ export default function HomePage(): JSX.Element {
           />
         </div>
         <div className={styles.home__content}>
-          <h1 className={styles.home__title}>Who wants to be a millionaire?</h1>
+          <h2 className={styles.home__title}>Who wants to be a millionaire?</h2>
           <Button text="Start" onClick={startGame} />
         </div>
       </div>

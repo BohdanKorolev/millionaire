@@ -1,0 +1,44 @@
+@import 'grid';
+
+// Font sizes across breakpoints
+$font-sizes: (
+        base: 16px,
+        sm: (
+                heading: 2rem,
+                question: 1.125rem,
+                utils: 0.875rem
+        ),
+        md: (
+                heading: 3rem,
+                question: 1.75rem,
+                utils: 1rem
+        ),
+        lg: (
+                heading: 2.5rem,
+                question: 1.875rem,
+                utils: 1.125rem
+        ),
+        xl: (
+                heading: 3.5rem,
+                question: 2rem,
+                utils: 1.25rem
+        )
+);
+
+@mixin responsive-font-sizes($property, $font-type) {
+  @media screen and (max-width: map-get($breakpoints, sm)) {
+    #{$property}: map-get(map-get($font-sizes, sm), $font-type);
+  }
+
+  @media screen and (min-width: map-get($breakpoints, sm) + 1) and (max-width: map-get($breakpoints, md)) {
+    #{$property}: map-get(map-get($font-sizes, md), $font-type);
+  }
+
+  @media screen and (min-width: map-get($breakpoints, md) + 1) and (max-width: map-get($breakpoints, lg)) {
+    #{$property}: map-get(map-get($font-sizes, lg), $font-type);
+  }
+
+  @media screen and (min-width: map-get($breakpoints, lg) + 1) {
+    #{$property}: map-get(map-get($font-sizes, xl), $font-type);
+  }
+}

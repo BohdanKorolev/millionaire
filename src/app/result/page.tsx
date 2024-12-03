@@ -3,7 +3,7 @@
 import { JSX, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-import styles from './result.module.scss';
+import styles from './page.module.scss';
 import { useGame } from '@/contexts/game.context';
 import Button from '@/components/Button/Button';
 
@@ -36,7 +36,7 @@ export default function ResultPage(): JSX.Element {
         <div className={styles.result__content}>
           <div>
             <p className={styles.result__subtitle}>Total score:</p>
-            <h2 className={styles.result__title}>{score || '$1,000,000'}</h2>
+            <h2 className={styles.result__title}>{score}</h2>
           </div>
           <Button text="Try Again" onClick={restartGame} />
         </div>

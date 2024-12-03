@@ -1,3 +1,5 @@
+@import '@/styles/typography';
+
 .button {
   position: relative;
   max-width: 421px;
@@ -28,10 +30,8 @@
     top: 50%;
     left: 11.85%;
     transform: translate(0, -50%);
-
     font-weight: 400;
-    font-size: var(--utils-font-size);
-    line-height: 116%;
+    @include responsive-font-sizes('font-size', utils);
     white-space: nowrap;
 
     &__indicator {
